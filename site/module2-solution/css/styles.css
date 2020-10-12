@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    float:left;
+}
+
+p{
+    margin-top:30px;
+}
+
+.row{
+    width:100%;
+}
+
+.section{
+    background-color: #dddddd;
+    border: 1px solid black;
+    margin:10px;
+    padding:10px;
+    position: relative;
+}
+
+.title{
+    border: 1px solid #000;
+    color:#fff;
+    font-weight: bold;
+    margin:0;
+    padding:5px;
+    position: absolute;
+    right:0;
+    text-align: center;
+    top:0;
+    width:100px;
+}
+
+.row > div:nth-child(1) > .section > .title{
+    background-color: green;
+}
+
+.row > div:nth-child(2) > .section > .title{
+    background-color: red;
+}
+
+.row > div:nth-child(3) > .section > .title{
+    background-color: orange;
+}
+
+
+/* Media queries for Mobile First */
+
+@media (min-width:992px){
+    .col-dsk-4{
+        width:33.33%;
+    }
+    
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .col-tab-6{
+        width:50%;
+    }
+    .col-tab-12{
+        width:100%;
+    }
+}
